@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  background: #ffffff;
+}
+.menu {
+  width: 300px;
+  /*background: #e8edff;*/
+  /*margin: 14px auto;*/
+}
+.menu .divSelecionarItens {
+  display: flex;
+  height: 55px;
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.335);
+}
+.divSelecionarItens i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+.menu.active .divSelecionarItens i {
+  transform: rotate(-180deg);
+}
+.menu .listaOpcoes {
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.335);
+  display: none;
+}
+.menu.active .listaOpcoes {
+  display: block;
+}
+.listaOpcoes .itemLista {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+.listaOpcoes .itemLista:hover {
+  background: #dddddd;
+}
+.itemLista i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+.itemLista .textoItem {
+  font-size: 18px;
+  color: #333;
+}
